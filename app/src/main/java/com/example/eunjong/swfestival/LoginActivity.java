@@ -1,4 +1,4 @@
-package com.example.kimjongeun.management;
+package com.example.eunjong.swfestival;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.eunjong.swfestival.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                Intent registerIntent = new Intent(LoginActivity.this, com.example.eunjong.swfestival.RegisterActivity.class);
                 LoginActivity.this.startActivity(registerIntent);
             }
         });
