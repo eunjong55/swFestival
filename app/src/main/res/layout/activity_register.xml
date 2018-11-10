@@ -74,7 +74,7 @@
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
@@ -83,5 +83,9 @@
         android:text="회원가입"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/studentNumberText" />
+        app:layout_constraintTop_toBottomOf="@+id/studentNumberText"
+        android:background="@drawable/button_login"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        />
 </android.support.constraint.ConstraintLayout>
