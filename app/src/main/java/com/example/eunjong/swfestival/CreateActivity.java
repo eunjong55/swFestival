@@ -39,14 +39,14 @@ public class CreateActivity extends AppCompatActivity {
                 RadioButton courseButton = (RadioButton) findViewById(i);
                 courseUniversity = courseButton.getText().toString();
 
-                //yearAdapter = ArrayAdapter.createFromResource(CreateActivity.this, R.array.year, android.R.layout.simple_spinner_dropdown_item);
-                //yearSpinner.setAdapter(yearAdapter);
+                yearAdapter = ArrayAdapter.createFromResource(CreateActivity.this, R.array.term, android.R.layout.simple_spinner_dropdown_item);
+                yearSpinner.setAdapter(yearAdapter);
 
-                //termAdapter = ArrayAdapter.createFromResource(CreateActivity.this, R.array.year, android.R.layout.simple_spinner_dropdown_item);
-                //termSpinner.setAdapter(termAdapter);
+                termAdapter = ArrayAdapter.createFromResource(CreateActivity.this, R.array.graduateArea, android.R.layout.simple_spinner_dropdown_item);
+                termSpinner.setAdapter(termAdapter);
 
-                //areaAdapter = ArrayAdapter.createFromResource(CreateActivity.this, R.array.year, android.R.layout.simple_spinner_dropdown_item);
-                //areaSpinner.setAdapter(areaAdapter);
+                areaAdapter = ArrayAdapter.createFromResource(CreateActivity.this, R.array.universityArea, android.R.layout.simple_spinner_dropdown_item);
+                areaSpinner.setAdapter(areaAdapter);
             }
         });
     }

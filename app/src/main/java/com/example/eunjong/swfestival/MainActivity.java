@@ -24,6 +24,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button createButton = (Button) findViewById(R.id.create);
+
+        createButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), CreateActivity.class);//intent는 새로운 창을 열기 위해서 필요한 객체
+                startActivity(intent);
+            }
+        });
+
+
+
+        ///
         TextView welcomeMessage = (TextView) findViewById(R.id.welcomeMessage);
 
         Intent intent = getIntent();
