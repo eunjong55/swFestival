@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity"
+    >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:text="로그인 화면"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        />
+
+<<<<<<< HEAD
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+=======
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/edittext_login"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorGray"
+>>>>>>> bbef5c87b4f69bb295630542e859513add3c38bd
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -62,6 +92,7 @@
 
 
     <EditText
+<<<<<<< HEAD
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:hint="아이디"
@@ -100,10 +131,47 @@
         android:text="로그인"
         android:layout_marginTop="10dp"
         android:layout_gravity="center" />
+=======
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idText"
+        android:textColorHint="@color/colorGray"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_login"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="로그인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_login"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        />
+>>>>>>> bbef5c87b4f69bb295630542e859513add3c38bd
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_gravity="center"
         android:textSize="18dp"
         android:layout_marginTop="5dp"
@@ -113,3 +181,19 @@
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
+=======
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="15dp"
+        android:text="회원가입"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        />
+</LinearLayout>
+>>>>>>> bbef5c87b4f69bb295630542e859513add3c38bd

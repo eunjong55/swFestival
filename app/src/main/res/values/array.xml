@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="term">
+        <item>이체은</item>
+        <item>김종은</item>
+        <item>이은종</item>
+    </string-array>
+
+    <string-array name="graduateArea">
+        <item>코딩</item>
+        <item>안드로이드스튜디오</item>
+        <item>전전</item>
+        <item>인피니트</item>
+    </string-array>
+
+    <string-array name="universityArea">
+        <item>여신</item>
+        <item>천재</item>
+        <item>호야</item>
+    </string-array>
+</resources>
